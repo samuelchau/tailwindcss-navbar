@@ -26,7 +26,10 @@ class Navbar extends React.Component {
             <div className={this.state.active ? normalButton : activeButton}
 //----onClick the state is changed -------
                 onClick={() =>this.setState({ active: !this.state.active })}
-            >	&#9776;</div>
+            >	
+
+               {this.state.active ? "\u2613" : "\u2630" }  
+           </div>
 
         </div>);
     }
